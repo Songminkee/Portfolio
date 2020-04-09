@@ -1,3 +1,10 @@
+## Requirement
+
+- MFC
+- [FMOD](<https://www.fmod.com/>)
+
+## How to use?
+
 ![](./picture/1.jpg)
 
 ![](./picture/2.jpg)
@@ -23,3 +30,8 @@
 ![](./picture/12.jpg)
 
 ![](./picture/13.jpg)
+
+## Reference
+
+- Sound 1,4 : [http://www.grsites.com/archive/sounds/](<http://www.grsites.com/archive/sounds/>)    
+- Sound 2,3 : [https://www.fmod.com/](<https://www.fmod.com/>)
