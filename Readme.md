@@ -6,7 +6,7 @@
 
 ## My role
 
-![](./picture/mr.jpg)
+![](./picture/myrole.jpg)
 
 - 디코딩 된 음향 및 영상 데이터 랜더링 (Fmod, Opengl)
 - Player UI 제공 (MFC)
