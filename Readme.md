@@ -4,17 +4,19 @@
 
 
 
+
+
 ## My role
 
 ![](./picture/myrole.jpg)
 
 - 디코딩 된 음향 및 영상 데이터 랜더링 (Fmod, Opengl)
-
 - Player UI 제공 (MFC)
-
 - [음향 + 영상 랜더링 연동 데모](https://drive.google.com/file/d/1aVbnPVS1kR7Zw5ao3tgNl4w2fUY9GVGG/view?usp=sharing) (최종 결과물은 타기관의 프로그램이 포함되어 있어 공개하지 않았습니다.)
 
-  
+
+
+
 
 ## Related Demo Program
 
