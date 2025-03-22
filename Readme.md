@@ -1,5 +1,3 @@
-### [Portfolio_file](https://github.com/Songminkee/Portfolio/blob/master/Portfolio.pdf)
-
 ## Object
 
 - 시청자의 조작에 맞춰 음향과 영상을 제공하는 대화형 컨텐츠 제공  
