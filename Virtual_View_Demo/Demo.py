@@ -68,9 +68,9 @@ def demo(params, dataloader):
     while(1):
         if flag is False:
             recon,image = sess.run([model.reconstructed_image,dataloader.left_image_batch], feed_dict={tf_now_scale: [now_scale],
-                                                                   dataloader.left_image_path: args.demo_path + 'train/{}/{}.jpg'.format(
+                                                                   dataloader.left_image_path: args.demo_path + 'test/{}/{}.jpg'.format(
                                                                        num, frame),
-                                                                   dataloader.right_image_path: args.demo_path + 'train/{}/{}.jpg'.format(
+                                                                   dataloader.right_image_path: args.demo_path + 'test/{}/{}.jpg'.format(
                                                                        num + 1, frame),
                                                                    dataloader.left_param_path: [
                                                                        args.demo_path + 'cam_q/{}/camera.txt'.format(
@@ -83,13 +83,13 @@ def demo(params, dataloader):
             flag=True
         elif int(now_scale*10)%10==0:
             if now_scale==2:
-                image = sess.run(dataloader.right_image_batch,feed_dict={dataloader.right_image_path:args.demo_path+'train/{}/{}.jpg'.format(num+1,frame)})
+                image = sess.run(dataloader.right_image_batch,feed_dict={dataloader.right_image_path:args.demo_path+'test/{}/{}.jpg'.format(num+1,frame)})
             else:
-                image = sess.run(dataloader.left_image_batch,feed_dict={dataloader.left_image_path:args.demo_path+'train/{}/{}.jpg'.format(num,frame)})
+                image = sess.run(dataloader.left_image_batch,feed_dict={dataloader.left_image_path:args.demo_path+'test/{}/{}.jpg'.format(num,frame)})
         else:
             image = sess.run(model.reconstructed_image,feed_dict={tf_now_scale:[now_scale],
-                                                                  dataloader.left_image_path:args.demo_path+'train/{}/{}.jpg'.format(num,frame),
-                                                                    dataloader.right_image_path:args.demo_path+'train/{}/{}.jpg'.format(num+1,frame),
+                                                                  dataloader.left_image_path:args.demo_path+'test/{}/{}.jpg'.format(num,frame),
+                                                                    dataloader.right_image_path:args.demo_path+'test/{}/{}.jpg'.format(num+1,frame),
                                                                     dataloader.left_param_path:[args.demo_path+'cam_q/{}/camera.txt'.format(num)],
                                                                     dataloader.right_param_path:[args.demo_path+'cam_q/{}/camera.txt'.format(num+1)],
                                                                     })
@@ -102,7 +102,8 @@ def demo(params, dataloader):
 
         ## keboard events
         key = cv2.waitKeyEx()
-
+        print(f'num={num}')
+        print(f'frame={frame}')
         if key == 2555904 or key==100:  # right_arrow_key
             tum_cnt += 1
             now_scale += scale

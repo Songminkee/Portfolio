@@ -1,4 +1,12 @@
+### original view
+
+<img src="./gif/original_view.gif" style="zoom:150%;" />
+
+
+### synthesis view
 <img src="./gif/Demo.gif" style="zoom:150%;" />
+
+
 
 - You can control using keys (w,s,a,d or arrow keys) in opencv window
 - And You want quit, then please press 'ESC' in opencv window

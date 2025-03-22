@@ -1,2 +1,4 @@
-./model
-./example
+model/
+example/
+Portfolio.pdf
+__pycache__/

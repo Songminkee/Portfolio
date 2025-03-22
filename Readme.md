@@ -1,4 +1,4 @@
-### [Portfolio_file](https://github.com/Songminkee/Portfolio/Portfolio.pdf)
+### [Portfolio_file](https://github.com/Songminkee/Portfolio/blob/master/Portfolio.pdf)
 
 ## Object
 
